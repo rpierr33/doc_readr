@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Advanced PDF Reader with Page Navigation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+    
+    <body>
+        <div class="container">
+            <h1>Advanced PDF Reader with Page Navigation</h1>
+            <input type="file" id="file-input" accept=".pdf">
+            <div id="pdf-viewer"></div>
+            <div id="page-controls">
+                <button id="prev-page">Previous Page</button>
+                <span id="page-num"></span>
+                <button id="next-page">Next Page</button>
+            </div>
+            <div id="caption-container"></div>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div id="controls">
+                <button id="read-btn">Read Aloud</button>
+                <button id="rewind-btn">Rewind 10s</button>
+                <button id="forward-btn">Forward 10s</button>
+                <select id="voice-select"></select>
+                <input type="range" id="speed-control" min="0.5" max="2" step="0.1" value="1">
+                <span id="speed-value">Speed: 1x</span>
+            </div>
+        </div>
+    
+        <script src="../js/func.js"></script>
+    </body>
+    
+    </html>
